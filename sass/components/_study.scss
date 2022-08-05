@@ -1,0 +1,35 @@
+.study {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.study__item {
+  margin-right: $basic-margin;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.section.study {
+  padding-top: 0;
+}
+
+.thumb {
+  position: relative;
+}
+
+.study__title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px 0px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}

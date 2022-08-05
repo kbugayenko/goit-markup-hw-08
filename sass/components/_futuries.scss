@@ -1,0 +1,40 @@
+.futuries {
+  display: flex;
+
+  &.section {
+    padding-bottom: 0;
+  }
+
+  & > .futuries__item {
+    flex-basis: calc(100% / 4);
+    margin-left: $basic-margin;
+  }
+}
+.futuries__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-button;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.futuries__item:first-child {
+  margin-left: 0;
+}
+
+.futuries__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.futuries__paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $acent-color;
+}

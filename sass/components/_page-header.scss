@@ -1,0 +1,101 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 93px;
+
+  & .link {
+    display: block;
+    position: relative;
+    color: $main-text-color;
+
+    transition: color $animation;
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: $button-color;
+  }
+
+  & .link.current {
+    color: $button-color;
+  }
+
+  & .link.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $button-color;
+    border-radius: 2px;
+  }
+}
+
+.nav-item {
+  margin-right: 50px;
+
+  & > .link {
+    display: block;
+    padding: 32px 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.adress-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  display: flex;
+
+  & .link {
+    display: flex;
+    align-items: center;
+    color: $acent-color;
+
+    transition: color $animation;
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: $button-color;
+  }
+}
+
+.adress-nav-list {
+  margin-left: 50px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.nav-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}

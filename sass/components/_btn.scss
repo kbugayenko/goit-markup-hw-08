@@ -1,0 +1,79 @@
+.hero-button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  color: $primary-white-color;
+  background-color: $button-color;
+  display: block;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $background;
+  }
+}
+
+.btn-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  color: $icons-color;
+
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $button-color;
+  }
+}
+
+.button-sub {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $primary-white-color;
+
+  transition: color $animation, background-color $animation;
+}
+
+.button {
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: $background-button;
+  border-radius: 4px;
+  border: $background-button;
+  padding: 6px 22px;
+  cursor: pointer;
+}
