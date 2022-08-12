@@ -1,15 +1,33 @@
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 4 - 90px);
-}
-
 .section.team {
   background-color: $background-button;
 
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  // justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: $dekstop) {
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
+
+.team {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $dekstop) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 4 - 90px);
+  }
 }
 
 .team-list {
@@ -34,7 +52,15 @@
 }
 
 .team-disc {
-  padding: $basic-margin 0;
+  padding: 24px 15px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 24px 15px;
+  }
+
+  @media screen and (min-width: $dekstop) {
+    padding: 30px 15px;
+  }
 }
 
 .team-descrip {

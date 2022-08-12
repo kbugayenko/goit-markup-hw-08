@@ -41,9 +41,26 @@ ul {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-lines: 1170px;
+  }
 }
 
 .section {
@@ -327,6 +344,12 @@ ul {
   cursor: pointer;
 }
 
+.menu-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .futuries {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,23 +443,48 @@ ul {
   line-height: 1.14;
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: calc(100% / 4 - 90px);
-      flex-basis: calc(100% / 4 - 90px);
-}
-
 .section.team {
   background-color: #f5f4fa;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section.team {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section.team {
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc(100% / 4 - 90px);
+        flex-basis: calc(100% / 4 - 90px);
+  }
 }
 
 .team-list {
@@ -464,7 +512,19 @@ ul {
 }
 
 .team-disc {
-  padding: 30px 0;
+  padding: 24px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-disc {
+    padding: 24px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-disc {
+    padding: 30px 15px;
+  }
 }
 
 .team-descrip {
