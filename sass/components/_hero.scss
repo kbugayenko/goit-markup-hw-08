@@ -19,11 +19,16 @@
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: $basic-margin;
+
+  @media screen and (min-width: $dekstop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
