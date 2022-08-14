@@ -42,6 +42,8 @@ ul {
 
 .container {
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -59,6 +61,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -411,6 +415,12 @@ ul {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1169px) {
+  .study {
+    display: none;
+  }
+}
+
 .study__item {
   margin-right: 30px;
 }
@@ -447,15 +457,6 @@ ul {
 
 .section.team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .team {

@@ -1,5 +1,7 @@
 .container {
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $mobile) {
     width: 450px;
@@ -11,5 +13,7 @@
 
   @media screen and (min-width: $dekstop) {
     width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
