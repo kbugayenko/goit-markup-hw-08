@@ -13,3 +13,9 @@
 .logo-studio {
   color: $color-logo;
 }
+
+.nav .logo {
+  @media screen and(min-width: $mobile) {
+    display: block;
+  }
+}

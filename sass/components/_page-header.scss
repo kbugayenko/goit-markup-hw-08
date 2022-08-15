@@ -2,7 +2,12 @@
   border-bottom: 1px solid #ececec;
 
   & .container {
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
+
     @media screen and (min-width: $tablet) {
+      width: 738px;
       display: flex;
       align-items: center;
     }
@@ -13,6 +18,9 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  position: relative;
+
+  // justify-content: space-between;
 }
 
 .site-nav {
@@ -22,8 +30,16 @@
   letter-spacing: 0.02em;
   justify-content: center;
   align-items: center;
-  display: flex;
+
   margin-left: 93px;
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 
   & .link {
     display: block;
@@ -72,8 +88,8 @@
   display: none;
 
   position: absolute;
-  top: 100%;
-  left: 0;
+
+  right: 15px;
   width: 100%;
 
   &.is-open {
@@ -87,7 +103,12 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-left: auto;
-  display: flex;
+  @media screen and(max-width: $mobile) {
+    display: none;
+  }
+  @media screen and(min-width: $tablet) {
+    display: flex;
+  }
 
   & .link {
     display: flex;

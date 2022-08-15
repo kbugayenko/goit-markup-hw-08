@@ -116,12 +116,25 @@ ul {
   color: #000000;
 }
 
+@media screen and (min-width: 480px) {
+  .nav .logo {
+    display: block;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 480px) {
+  .header .container {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header .container {
+    width: 738px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139,6 +152,7 @@ ul {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
 }
 
 .site-nav {
@@ -152,10 +166,21 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 93px;
+}
+
+@media screen and (max-width: 480px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav .link {
@@ -203,8 +228,7 @@ ul {
 .menu-container {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  right: 15px;
   width: 100%;
 }
 
@@ -218,9 +242,20 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .adress-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adress-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .adress-nav .link {
@@ -392,9 +427,8 @@ ul {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: absolute;
+  right: 15px;
   padding: 0;
   margin: 0;
   border: none;
