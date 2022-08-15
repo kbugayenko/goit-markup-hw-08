@@ -2,9 +2,17 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
 
   color: #212121;
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $dekstop) {
+    line-height: 1.15;
+  }
 }
 
 .form-label {
@@ -15,6 +23,15 @@
   position: relative;
   width: 100%;
   margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $dekstop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-input {
@@ -69,7 +86,11 @@ textarea {
 }
 
 .form-field.check {
-  padding: 12px 0px 12px 36px;
+  padding: 12px 0px 12px 24px;
+
+  @media screen and (min-width: $dekstop) {
+    padding: 12px 0px 12px 36px;
+  }
 
   & .form-icons {
     border-radius: 2px;
@@ -80,10 +101,15 @@ textarea {
 .form-icons.check {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0px;
   fill: currentColor;
 
   transform: translateY(-50%);
+
+  @media screen and(min-width: $dekstop) {
+    top: 50%;
+    left: 12px;
+  }
 }
 
 .checkbox:checked + .form-icons {

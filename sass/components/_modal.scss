@@ -26,8 +26,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   padding: 40px;
 
@@ -36,6 +36,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
+
+  @media screen and (min-width: $dekstop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close {
