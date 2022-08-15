@@ -118,6 +118,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header .container {
@@ -196,6 +197,19 @@ ul {
 
 .nav-item:last-child {
   margin-right: 0;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: red;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .adress-nav {
@@ -379,6 +393,24 @@ ul {
   margin: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-close {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .futuries {

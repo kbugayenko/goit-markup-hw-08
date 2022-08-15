@@ -1,11 +1,13 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 
   & .container {
     display: flex;
     align-items: center;
   }
 }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +64,21 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  color: red;
+
+  &.is-open {
+    display: block;
   }
 }
 

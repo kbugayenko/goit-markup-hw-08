@@ -83,4 +83,20 @@
   margin: 0;
   border: none;
   background-color: transparent;
+
+  & .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: block;
+  }
+
+  &.is-open .icon-close {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
