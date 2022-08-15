@@ -27,11 +27,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-
-  @media screen and (min-width: $dekstop) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
 .form-input {
@@ -86,10 +81,12 @@ textarea {
 }
 
 .form-field.check {
-  padding: 12px 0px 12px 24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 24px;
 
   @media screen and (min-width: $dekstop) {
-    padding: 12px 0px 12px 36px;
+    padding-left: 36px;
   }
 
   & .form-icons {
@@ -107,7 +104,6 @@ textarea {
   transform: translateY(-50%);
 
   @media screen and(min-width: $dekstop) {
-    top: 50%;
     left: 12px;
   }
 }
