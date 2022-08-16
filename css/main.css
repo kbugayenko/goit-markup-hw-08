@@ -63,6 +63,9 @@ ul {
     width: 1170px;
     padding-top: 94px;
     padding-bottom: 94px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -126,21 +129,31 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 480px) {
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
   .header .container {
-    width: 450px;
+    padding: 16px 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header .container {
-    width: 738px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 21px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    padding: 32px 15px;
   }
 }
 
@@ -152,7 +165,6 @@ ul {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  position: relative;
 }
 
 .site-nav {
@@ -166,10 +178,13 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 93px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     display: none;
   }
@@ -177,9 +192,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-left: 88px;
   }
 }
 
@@ -228,7 +241,8 @@ ul {
 .menu-container {
   display: none;
   position: absolute;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   width: 100%;
 }
 
@@ -244,7 +258,7 @@ ul {
   margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .adress-nav {
     display: none;
   }
@@ -315,7 +329,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: 1200px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -427,8 +441,11 @@ ul {
 }
 
 .menu-button {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   padding: 0;
   margin: 0;
   border: none;
