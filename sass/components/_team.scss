@@ -1,17 +1,10 @@
 .section.team {
   background-color: $background-button;
+  text-align: center;
 }
 
 .team {
-  display: block;
-
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  @media screen and (min-width: $dekstop) {
     margin: -15px;
   }
 }

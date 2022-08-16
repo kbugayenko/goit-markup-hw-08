@@ -1,13 +1,17 @@
 .header {
   border-bottom: 1px solid #ececec;
 
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   & .container {
     display: flex;
     align-items: center;
     position: relative;
 
     @media screen and (max-width: 767px) {
-      padding: 16px 15px;
+      padding: 16px 10px;
     }
 
     @media screen and (min-width: $tablet) {
@@ -31,9 +35,11 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+
   margin-left: 93px;
 
   @media screen and (max-width: 767px) {

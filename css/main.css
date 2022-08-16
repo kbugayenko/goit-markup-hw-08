@@ -143,6 +143,9 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header .container {
@@ -157,7 +160,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .header .container {
-    padding: 16px 15px;
+    padding: 16px 10px;
   }
 }
 
@@ -188,15 +191,15 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 93px;
 }
 
@@ -319,16 +322,17 @@ ul {
 }
 
 .hero {
+  max-width: 1600px;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("..//images/hero-bg.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 @media screen and (min-width: 480px) {
@@ -345,7 +349,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -360,11 +365,15 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 370px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .hero-title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -607,24 +616,10 @@ ul {
 
 .section.team {
   background-color: #f5f4fa;
-}
-
-.team {
-  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .team {
     margin: -15px;
   }
@@ -757,6 +752,11 @@ ul {
 .clients-item:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
+}
+
+.soc-icons {
+  display: block;
+  margin: 0 auto;
 }
 
 .footer {
