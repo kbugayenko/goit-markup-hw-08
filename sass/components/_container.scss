@@ -1,6 +1,8 @@
 .container {
-  margin: 0 auto;
-  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: $mobile) {
     width: 450px;
@@ -11,9 +13,6 @@
   }
 
   @media screen and (min-width: $dekstop) {
-    width: 1170px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    justify-content: center;
+    width: 1200px;
   }
 }

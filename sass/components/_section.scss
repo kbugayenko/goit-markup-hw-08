@@ -1,13 +1,22 @@
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: $dekstop) {
+    padding: 94px 0;
+  }
+}
+
 .section__title {
   color: $main-text-color;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 30px;
 
   @media screen and (min-width: $dekstop) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }

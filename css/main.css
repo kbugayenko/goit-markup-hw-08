@@ -41,8 +41,10 @@ ul {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -59,12 +61,17 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
   }
 }
 
@@ -74,12 +81,13 @@ ul {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .section__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
