@@ -10,6 +10,10 @@ body {
   justify-content: center;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -21,8 +25,11 @@ p {
 
 img {
   display: block;
-  // max-width: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 ul {
