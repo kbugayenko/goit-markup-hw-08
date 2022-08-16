@@ -495,10 +495,6 @@ ul {
   }
 }
 
-.futuries {
-  display: block;
-}
-
 @media screen and (min-width: 768px) {
   .futuries {
     display: -webkit-box;
@@ -541,9 +537,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f4fa;
-  height: 120px;
-  border-radius: 4px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .futuries__title {
@@ -621,6 +619,11 @@ ul {
 
 @media screen and (min-width: 768px) {
   .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: -15px;
   }
 }

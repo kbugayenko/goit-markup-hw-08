@@ -1,6 +1,4 @@
 .futuries {
-  display: block;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -29,9 +27,11 @@
   justify-content: center;
   align-items: center;
   background-color: $background-button;
-  height: 120px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: $basic-margin;
   border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .futuries__title {
