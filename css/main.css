@@ -122,6 +122,12 @@ ul {
   right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .menu-button > .menu-icons:hover, .menu-button > .menu-icons:focus {
   fill: #2f303a;
 }
@@ -835,17 +841,20 @@ ul {
 
 .footer {
   background-color: #2f303a;
+  padding: 60px 0px;
 }
 
-.footer .container {
-  height: 603px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .podpis {
+    margin: 0 auto;
+  }
 }
 
 .footer .logo {
@@ -904,6 +913,12 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    text-align: start;
+  }
+}
+
 .foot-list {
   padding-bottom: 60px;
   margin: 0 auto;
@@ -953,12 +968,21 @@ ul {
   background-color: #2196f3;
 }
 
-.mail-podpis {
-  display: block;
+.input-podpis {
+  width: 100%;
 }
 
-.input-podpis {
-  width: 450px;
+@media screen and (min-width: 1200px) {
+  .footer-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    text-align: left;
+    padding-top: 0;
+  }
 }
 
 .mail-podpis {
