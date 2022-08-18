@@ -129,22 +129,3 @@
   margin-right: 10px;
   fill: currentColor;
 }
-
-.social {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-.social__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
-}
-
-.social__link {
-  font-size: 18px;
-  line-height: 1.22px;
-  color: $background-color;
-}
