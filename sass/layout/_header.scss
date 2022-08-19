@@ -1,0 +1,16 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    gap: 80px;
+  }
+}

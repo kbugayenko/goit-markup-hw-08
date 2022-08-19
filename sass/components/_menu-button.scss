@@ -1,0 +1,36 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 101;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  &:hover .menu-button__close,
+  &:focus .menu-button__close {
+    fill: $button-color;
+  }
+}
+
+.menu-button__close {
+  display: none;
+  fill: $main-text-color;
+  transition: fill $animation;
+
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+
+.menu-button__menu {
+  display: block;
+
+  .menu-button.is-open & {
+    display: none;
+  }
+}

@@ -17,6 +17,10 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+
+    .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
   }
 }
 
@@ -24,10 +28,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
-  width: 450px;
-  height: 609px;
+  max-height: 100%;
 
   padding: 40px;
 
@@ -35,9 +37,21 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  opacity: 1;
+  overflow: auto;
 
-  @media screen and (min-width: $dekstop) {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $animation;
+
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
+  }
+
+  @media screen and(min-width:480px) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -47,12 +61,18 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   padding: 0;
   margin: 0;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
 
   transition: color $animation;
 

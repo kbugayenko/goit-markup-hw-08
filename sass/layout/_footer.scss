@@ -1,0 +1,96 @@
+.footer {
+  background-color: $background-color;
+  padding: 60px 0px;
+
+  @media screen and (min-width: $dekstop) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  & .podpis {
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+    }
+  }
+
+  & .logo {
+    font-size: 24px;
+    line-height: 1.17;
+    justify-content: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+  & .logo-studio {
+    color: $primary-white-color;
+
+    @media screen and (min-width: $dekstop) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+}
+
+.footer-navigation {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+.foot-adress {
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+    @media screen and (min-width: $dekstop) {
+      margin-left: auto;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
+  }
+  @media screen and (min-width: $dekstop) {
+    text-align: left;
+  }
+}
+.footer-title {
+  margin-bottom: 20px;
+  color: $primary-white-color;
+}
+
+.foot-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-set-ico__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: $primary-white-color;
+
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color;
+    fill: $primary-white-color;
+  }
+
+  &--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation;
+    fill: $primary-white-color;
+  }
+}
