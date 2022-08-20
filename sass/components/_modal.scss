@@ -57,6 +57,11 @@
   }
 }
 
+.modal > .form {
+  flex-direction: column;
+  gap: 0;
+}
+
 .close {
   position: absolute;
   top: 8px;
