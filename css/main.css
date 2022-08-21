@@ -1064,13 +1064,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 12px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1089,9 +1085,9 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .input-podpis {
-    width: 358px;
+    max-width: 450px;
   }
 }
 
@@ -1101,9 +1097,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .input-podpis {
-    max-width: 450px;
+@media screen and (min-width: 1200px) {
+  .form > .input-podpis {
+    width: 358px;
   }
 }
 

@@ -20,12 +20,11 @@
     color: $primary-white-color;
   }
 }
+
 .form {
   @media screen and (min-width: $dekstop) {
     display: flex;
-    gap: 12px;
     align-items: flex-start;
-    justify-content: space-between;
   }
 }
 
@@ -43,13 +42,17 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (min-width: $dekstop) {
-    width: 358px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    max-width: 450px;
   }
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    max-width: 450px;
+}
+
+.form > .input-podpis {
+  @media screen and (min-width: $dekstop) {
+    width: 358px;
   }
 }
