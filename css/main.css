@@ -122,7 +122,9 @@ ul {
 }
 
 .menu-button:hover .menu-button__close,
-.menu-button:focus .menu-button__close {
+.menu-button:focus .menu-button__close,
+.menu-button:hover .menu-button__menu,
+.menu-button:focus .menu-button__menu {
   fill: #2196f3;
 }
 
