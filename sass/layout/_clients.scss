@@ -6,11 +6,10 @@
 }
 
 .clients-list {
-  @media screen and (min-width: $mobile) {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-left: $basic-margin;
-    margin-top: $basic-margin;
-  }
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: $basic-margin;
+  margin-top: $basic-margin;
+
   @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 30px);
   }
