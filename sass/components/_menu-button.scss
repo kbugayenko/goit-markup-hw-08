@@ -12,7 +12,9 @@
     display: none;
   }
   &:hover .menu-button__close,
-  &:focus .menu-button__close {
+  &:focus .menu-button__close,
+  &:hover .menu-button__menu,
+  &:focus .menu-button__menu {
     fill: $button-color;
   }
 }
