@@ -141,6 +141,10 @@
   padding: 63px 24px;
 }
 
+.card {
+  flex-grow: 1;
+}
+
 .card-info {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
