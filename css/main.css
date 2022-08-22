@@ -937,10 +937,6 @@ ul {
   }
 }
 
-.footer-navigation {
-  padding: 0;
-}
-
 @media screen and (min-width: 768px) {
   .footer-navigation {
     display: -webkit-box;
@@ -1376,6 +1372,10 @@ textarea:focus-within {
 .checkbox:checked + .form-icons {
   background-color: #2196f3;
   border: transparent;
+}
+
+.dogovor {
+  color: #2196f3;
 }
 
 .project {
